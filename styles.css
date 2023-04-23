@@ -174,14 +174,19 @@ a {
   padding-right: 1.1rem;
   transition: all 0.1s;
   cursor: pointer;
+  color: #256599;
   background: #FDFDFC;
   border: none;
-  border: 1px solid #252525;
+  border: 1px solid #256599;
   font-size: 1.2rem;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.1s ease-in-out;
   box-sizing: border-box;
   width: 100%;
   margin-top: 2rem;
+}
+.plan-button:hover {
+  background-color: #256599;
+  color: #fefefe;
 }
 .price-plan-list-wrapper {
   text-align: left;
@@ -342,6 +347,12 @@ a {
   background-image: url(/assets/wallpaper2.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+}
+@media (max-width: 895px) {
+  .cta-container {
+    background-attachment: unset;
+  }
 }
 .hero-content {
   width: 50%;
